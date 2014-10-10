@@ -1,0 +1,14 @@
+body {
+    font-size: 14px;
+}
+
+#mainHeading, #main, footer, hr {
+    width: 960px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}

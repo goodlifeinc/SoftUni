@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+}
+body {
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    color: white;
+    background-image: url("../img/05.PowerPointSlide-bgr.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: top left;
+}
+#main {
+    padding: 30px;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-size: 38px;
+    color: rgba(243,190,96,1);
+}
+h2 {
+    font-size: 34px;
+    color: white;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.header {
+    font-size: 34px;
+    display: inline-block;
+}
+.white {
+    color: white;
+}
+ul {
+    list-style-type: square;
+}
+ul li {
+    color: rgba(243,196,96,1);
+}
+.content {
+    background: rgba(217,213,199,.15);
+    border: 1px solid rgba(199,191,172,1);
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.content>p {
+    margin: 0;
+    padding: 0;
+    padding-left: 12px;
+    color: rgba(251,238,201,1);
+}
+.content>p>#indent {
+    display: block;
+    padding-left: 36px;
+}
+footer {
+    text-align: right;
+}
+footer>#number {
+    font-size: 10px;
+}

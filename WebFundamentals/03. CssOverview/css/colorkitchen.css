@@ -1,0 +1,149 @@
+body {
+    font-size: 12px;
+    background-image: url(../img/colorful_dots_on_black.jpg);
+    background-repeat: repeat;
+}
+body > header {
+    height: 50px;
+    width: 100%;
+    font-size: 36px;
+    color: yellow;
+    background: green;
+    text-align: center;
+    margin-bottom: 20px;
+    background: #ff0000; /* Old browsers */
+    background: -moz-linear-gradient(left,  #ff0000 0%, #ff0000 33%, #007c12 33%, #007c12 66%, #3300ff 66%, #1500ff 66%, #1500ff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ff0000), color-stop(33%,#ff0000), color-stop(33%,#007c12), color-stop(66%,#007c12), color-stop(66%,#3300ff), color-stop(66%,#1500ff), color-stop(100%,#1500ff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #ff0000 0%,#ff0000 33%,#007c12 33%,#007c12 66%,#3300ff 66%,#1500ff 66%,#1500ff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #ff0000 0%,#ff0000 33%,#007c12 33%,#007c12 66%,#3300ff 66%,#1500ff 66%,#1500ff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #ff0000 0%,#ff0000 33%,#007c12 33%,#007c12 66%,#3300ff 66%,#1500ff 66%,#1500ff 100%); /* IE10+ */
+    background: linear-gradient(to right,  #ff0000 0%,#ff0000 33%,#007c12 33%,#007c12 66%,#3300ff 66%,#1500ff 66%,#1500ff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#1500ff',GradientType=1 ); /* IE6-9 */
+
+}
+aside {
+    float: left;
+    position: fixed;
+    display: inline-block;
+    width: 260px;
+    margin-left: 10px;
+    background: rgba(255,255,255, 0.9);
+    border-radius: 15px;
+    padding: 15px;
+}
+aside > nav > header {
+    text-decoration: underline;
+    font-size: 24px;
+}
+aside > nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+aside > nav > ul li {
+    font-size: 18px;
+    position: relative;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+aside > nav > ul li:before {
+    content: '';
+    background-image: url(../img/beforeLi.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+aside > nav > ul li a {
+    text-decoration: none;
+    color: black;
+}
+aside > nav > ul li:nth-of-type(1):hover {
+    background: red;
+    border-radius: 10px;
+}
+aside > nav > ul li:nth-of-type(2):hover {
+    background: orange;
+    border-radius: 10px;
+}
+aside > nav > ul li:nth-of-type(3):hover {
+    background: yellow;
+    border-radius: 10px;
+}
+aside > nav > ul li:nth-of-type(4):hover {
+    background: green;
+    border-radius: 10px;
+}
+aside > nav > ul li:nth-of-type(5):hover {
+    background: blue;
+    border-radius: 10px;
+}
+aside > nav > ul li:nth-of-type(6):hover {
+    margin-bottom: 0;
+}
+aside > nav > ul li:nth-of-type(6) a {
+    color: gray !important;
+}
+section {
+    margin: 0 15px 0 320px;
+    display: inline-block;
+}
+section > article {
+    font-size: 18px;
+    margin-bottom: 10px;
+    background: rgba(255,255,255, 0.9);
+    border-radius: 15px;
+    padding: 15px;
+}
+section > article > header {
+    padding: 5px;
+    font-size: 24px;
+    border-radius: 5px;
+}
+#webColors {
+    background-color: red;
+    color: white;
+}
+#webSafeColors {
+    background-color: orange;
+}
+#RGB {
+    background-color: yellow;
+}
+#RGBA {
+    background-color: green;
+    color: white;
+}
+section > article:nth-of-type(5) > header {
+    background-color: blue;
+    color: white;
+}
+section > article:nth-of-type(6) > header {
+    background-color: purple;
+    color: white;
+}
+section > article > div:first-letter {
+    font-size: 36px;
+}
+section > article > div:first-line {
+    font-style: italic;
+}
+section > article > span:nth-of-type(1) {
+    color: blue;
+    font-style: italic;
+}
+article > footer {
+    margin-top: 10px;
+}
+footer > a {
+    text-decoration: underline;
+    font-style: italic;
+    color: gray;
+}
+footer > a:visited {
+    text-decoration: underline;
+}
