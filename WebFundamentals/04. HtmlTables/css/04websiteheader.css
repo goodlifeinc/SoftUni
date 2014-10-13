@@ -1,0 +1,33 @@
+body {
+    font-size: 14px;
+    color: white;
+}
+body > table {
+    width: 960px;
+    background-color: #234465;
+    padding: 10px;
+}
+.logo {
+    width: 260px !important;
+}
+.nav-right {
+    float: right;
+}
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.nav ul li {
+    float: left;
+    padding: 5px;
+    text-transform: uppercase;
+}
+.nav ul li:first-of-type {
+    margin-left: 5px;
+}

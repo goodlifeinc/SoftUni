@@ -1,0 +1,10 @@
+table, td {
+    border: 1px solid black;
+}
+table:first-of-type td {
+    padding: 10px;
+}
+td > table td {
+    font-weight: bold;
+    font-size: 60px;
+}
