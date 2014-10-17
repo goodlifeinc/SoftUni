@@ -1,0 +1,121 @@
+body {
+    pading: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+h1, p {
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+    padding: 15px;
+    position: relative;
+}
+.theBox {
+    height: 200px;
+    width: 520px;
+    padding: 10px 15px;
+    border-left: 5px dashed red;
+    border-top: 5px dotted yellow;
+    border-right: 8px solid green;
+    border-bottom: 5px double blue;
+    box-shadow: 20px 20px 15px rgba(0,0,0,0.7);
+}
+.theBox h1 {
+    text-transform: uppercase;
+    text-shadow: 8px 8px 12px rgba(0,0,0,0.5);
+    text-align: center;
+    font-weight: normal;
+}
+.blueBorder {
+    margin-top: 20px;
+    border-radius: 64px;
+    border: 3px solid blue;
+}
+.greenBorder {
+    border-radius: 61px;
+    border: 3px solid green;
+}
+.yellowBorder {
+    border-radius: 58px;
+    border: 3px solid yellow;
+}
+.redBorder {
+    border-radius: 55px;
+    border: 3px solid red;
+    padding: 20px 20px;
+    text-align: center;
+}
+p {
+    font-weight: bold;
+    text-shadow: 8px 8px 12px rgba(0,0,0,0.5);
+}
+form {
+    margin-top: 20px;
+}
+input[type="text"] {
+    color: black;
+    width: 170px;
+    height: 15px;
+    padding: 2px;
+    text-align: center;
+    background-color: #D8921A;
+    border-bottom: 3px solid #A56401;
+    border-right: 3px solid #A56401;
+    border-top: 3px solid #FCA401;
+    border-left: 3px solid #FCA401;
+    font-weight: bold;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    black;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    black;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    black;
+}
+.smallDot {
+    height: 20px;
+    width: 20px;
+    background: rgba(128,128,128,0.5);
+    position: absolute;
+    left: 450px;
+    top: 143px;
+    border-radius: 50%;
+    border: 2px dashed white;
+    box-shadow: 0 0 0 2px rgba(128,128,128,0.5);
+}
+.mediumDot {
+    height: 30px;
+    width: 30px;
+    background: rgba(128,128,128,0.5);
+    position: absolute;
+    left: 490px;
+    top: 105px;
+    border-radius: 50%;
+    border: 2px dashed white;
+    box-shadow: 0 0 0 2px rgba(128,128,128,0.5);
+}
+.bigDot {
+    height: 50px;
+    width: 100px;
+    background: rgba(128,128,128,0.5);
+    position: absolute;
+    left: 535px;
+    top: 40px;
+    border-radius: 40px;
+    border: 2px dashed white;
+    box-shadow: 0 0 0 2px rgba(128,128,128,0.5);
+}
+.bigDot p {
+    text-align: center;
+    padding: 8px 0;
+    color: white;
+}

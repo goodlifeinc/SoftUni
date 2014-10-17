@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Problem 3. Styling A HTML Form</title>
+    <link href="css/03.stylingahtmlform.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="wrapper">
+    <form action="#" method="post" class="myForm">
+        <h2>Step 1: Your Details</h2>
+        <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="First and last name" />
+        </label>
+        <label>
+            <span>Email</span>
+            <input type="text" name="email" placeholder="example@domain.com" />
+        </label>
+        <label>
+            <span>Phone</span>
+            <input type="text" name="phone" placeholder="eg. +447500000000" />
+        </label>
+        <h2>Step 1: Delivery Address</h2>
+        <label>
+            <span>Address</span>
+            <textarea type="text" name="address"></textarea>
+        </label>
+        <label>
+            <span>Post code</span>
+            <input type="text" name="postcode" />
+        </label>
+        <label>
+            <span>Country</span>
+            <input type="text" name="country" />
+        </label>
+        <h2>Step 1: Card details</h2>
+        <div class="likeLabel">
+            <span>Card type</span>
+            <label><input type="radio" name="cardtype" value="Visa"><span class="visa">VISA</span></label>
+            <label><input type="radio" name="cardtype" value="AmEx"><span class="amex">AmEx</span></label>
+            <label><input type="radio" name="cardtype" value="Mastercard"><span class="mastercard">Mastercard</span></label>
+        </div>
+        <label>
+            <span>Card number</span>
+            <input type="text" name="cardnumber" />
+        </label>
+        <label>
+            <span>Security code</span>
+            <input type="text" name="securitycode" />
+        </label>
+        <label>
+            <span>Name on card</span>
+            <input type="text" name="nameoncard" placeholder="exact name as on the card" />
+        </label>
+        <input type="submit" value="Buy it!">
+    </form>
+</div>
+</body>
+</html>

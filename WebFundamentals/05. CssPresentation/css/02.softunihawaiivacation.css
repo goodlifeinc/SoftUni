@@ -1,0 +1,24 @@
+@font-face {
+    font-family: SoftUniHawaiianFont;
+    src: url(../img/Animated.ttf);
+}
+.wrapper {
+    width: 900px;
+    height: 600px;
+    background: radial-gradient(circle at 162px 120px, white 3.5%, #e9e69b 5%, white 15%, #0068DB 100%);
+}
+.hawaiians {
+    width: 900px;
+    height: 600px;
+    background: url(../img/VladoKHula.png) ,url(../img/AlexHula.png) ,url(../img/NakovHula.png) ,url(../img/TediHula.png) ,url(../img/PetiaHula.png) ,url(../img/VladoGHula.png), url(../img/HawaiiBackground.png);
+    background-repeat: no-repeat;
+    background-position: 671px 235px, 493px 205px, 411px 158px, 261px 361px, 182px 188px, 42px 221px, 0 0;
+}
+p {
+    font-family: SoftUniHawaiianFont;
+    font-size: 42px;
+    color: #FEBD1E;
+    text-align: right;
+    padding: 10px;
+    margin: 0;
+}

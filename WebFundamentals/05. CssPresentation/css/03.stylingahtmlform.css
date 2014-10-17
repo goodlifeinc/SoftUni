@@ -1,0 +1,100 @@
+body {
+    padding: 5px;
+    margin: 0;
+    font-size: 16px;
+}
+.wrapper {
+    padding: 1px 15px 15px 15px;
+    width: 380px;
+    margin: 0 auto;
+    background: url(../img/formBackground.jpg);
+    border-radius: 5px;
+}
+h2 {
+    padding: 0;
+    margin: 10px 0 10px 0;
+    font-size: 1.4em;
+    color: white;
+}
+label, .likeLabel {
+    display: block;
+    padding: 5px 10px;
+    background: rgba(255,255,255,0.4);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+label span {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    line-height: 35px;
+}
+label input {
+    width: 170px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0);
+}
+label textarea {
+    height: 75px;
+    width: 170px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0);
+}
+.likeLabel > span {
+    display: block;
+}
+.likeLabel label {
+    display: inline-block;
+    padding: 0;
+    background: none;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 30%;
+}
+.likeLabel input {
+    width: 20px;
+    display: inline-block;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+.likeLabel label > span {
+    width: 50px;
+    padding-left: 35px;
+}
+.visa {
+    background-image: url(../img/visa.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.amex {
+    background-image: url(../img/amex.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.mastercard {
+    background-image: url(../img/master.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+input[type="text"]:focus, textarea:focus {
+    border: 1px solid blue;
+    outline: none;
+    background-color: #FFE1B4;
+}
+input[type="submit"] {
+    margin-left: 130px;/*380px*/
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background: #04152F;
+}
+input[type="submit"]:hover {
+    background: #3087b5;
+}
