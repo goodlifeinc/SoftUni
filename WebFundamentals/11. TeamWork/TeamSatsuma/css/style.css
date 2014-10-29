@@ -1,0 +1,1093 @@
+/* CSS Styles for desktop screens <1600px & >1024px */
+
+/* Added some fonts from Google Fonts - 
+ * font-family: 'Poiret One', cursive; -> for h2
+ * font-family: 'Marck Script', cursive; -> for h3
+ */
+@import url(http://fonts.googleapis.com/css?family=Marck+Script|Poiret+One&subset=latin,cyrillic);
+
+body {
+    font-size: 12px;
+    background-color: #FFFFFF;
+}
+
+p {
+    color: #3D3C3A;
+}
+#mainSection p:first-letter {
+    margin-left: 1em;
+}
+img {
+    max-width: 100%;
+}
+p a {
+	color: blue;
+}
+p a:visited {
+	text-decoration: none;
+	color: blue;
+}
+
+.wrapper {
+    max-width: 960px;
+    min-width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#mainHeader {
+    padding: 10px;
+    border-bottom: 2px solid #D0CABF;
+}
+
+.topImage {
+    background: url("../img/header-image.jpg");
+    width: 100%;
+    max-width: 1250px;
+    height: 170px;
+    margin: 0 auto 10px auto;
+    box-shadow:
+    inset 0 0 50px 30px white;
+    background-position: center;
+}
+
+#mainLogo {
+    float: left;
+    margin-top: 10px;
+}
+
+#emigrant-uni-logo {
+    width: 200px;
+}
+
+#mainNav {
+    float: right;
+    font-size: 14px;
+    vertical-align: bottom;
+}
+
+article {
+    overflow: hidden;
+}
+
+article h3, .h3 {
+    font-family: 'Marck Script', cursive;
+    text-shadow: 4px 4px 4px #aaa;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Navigation menu behaviour - start */
+.bx-controls-direction {
+	opacity: 0.5;
+}
+nav ul ul {
+    display: none;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul {
+    padding: 0;
+    border-radius: 10px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+}
+nav ul:after {
+    content: ""; clear: both; display: block;
+}
+nav ul li {
+    float: left;
+    word-wrap: break-word;
+}
+nav ul li:hover {
+    background: #B9B1A8;
+}
+nav ul li:hover a {
+    color: #FFFFFF;
+}
+nav ul li a {
+    display: block; padding: 10px 15px;
+    color: #4B4D52; text-decoration: none;
+}
+nav ul ul {
+    background: #B9B1A8;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    z-index: 9999;
+}
+nav ul ul li {
+    float: none;
+    border-top: 1px solid #D0CABF;
+    position: relative;
+}
+nav ul ul li:last-of-type {
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+nav ul ul li a {
+    padding: 10px 15px;
+    color: #FFFFFF;
+}
+nav ul ul li:hover {
+    background: #4B4D52;
+}
+/* Navigation menu behaviour - end */
+
+#mainSection {
+    background-color: #F6F6F4;
+    padding: 10px 10px;
+}
+#mainSection header {
+    overflow: hidden;
+}
+
+#mainSection header h1 {
+    /*margin-left: 30%;*/
+    text-align: center;
+    color: #912900;
+    text-shadow: 4px 4px 4px #aaa;
+    overflow: hidden;
+}
+
+#mainSection article {
+    /*background: #FFFFFF; */
+    font-family: Helvetica, Serif;
+    font-size: 1.2em;
+    border: 2px solid #D0CABF;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+#mainSection article:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Styles for index.html Only */
+.indexPage #mainSection article {
+    background: none;
+    border: none;
+    width: 30%;
+    margin-right: 10px;
+    float: left;
+}
+.indexPage #mainSection article:last-of-type {
+    margin-right: 0;
+}
+
+.indexPage #mainSection article img, .indexPage #CompetitorsVideo {
+	box-sizing: border-box;
+    width: 90%;
+    box-shadow: none;
+    padding: 5px;
+    background: white;
+    border: 1px solid #B9B1A8;
+    border-radius: 10px;
+}
+
+/* Styles for index.html Only END */
+
+.newsPage #mainSection #ambition img {
+    float: left;
+    width: 290px;
+    height: 170px;
+    margin: 0 15px 10px 10px;
+}
+
+.newsPage #mainSection #primocia img {
+    float: left;
+    width: 290px;
+    height: 170px;
+    margin: 0 15px 10px 10px;
+}
+
+.newsPage #mainSection article #CompetitorsVideo {
+    float: left;
+    margin: 0 15px 10px 10px;
+}
+
+
+#searchSection hr {
+    margin-top: 10px;
+    margin-left: 10%;
+    background-color: grey;
+    height: 1px;
+    border: none;
+    width: 80%;
+    border-color: #D0CABF;
+}
+
+.searchPage #searchSection #searchResults {
+    margin-left: 10%;
+    font-style: italic;
+    color: #912900;
+}
+
+.searchPage #googleFrame {
+    margin: 0 auto;
+    width: 100%;
+    border: none;
+}
+
+#mainFooter {
+    background-color: #636363;
+    padding: 10px;
+}
+
+#mainFooter p, #mainFooter.wrapper span {
+    color: white;
+}
+
+.html5, .css3 {
+    display: block;
+    width: 82px;
+    height: 17px;
+    margin: 10px auto 0;
+}
+.html5 {
+    background-image: url(../img/html5valid.png);
+    background-repeat: no-repeat;
+}
+.css3 {
+    background-image: url(../img/css3valid.png);
+    background-repeat: no-repeat;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#searchBox {
+    float: right;
+    border: 2px solid #D0CABF;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#searchField, button{
+    background-color: transparent;
+    border: 0;
+    color: #707070;
+
+}
+
+.news-date, .news-author {
+    font-style: italic;
+    color: #696969;
+}
+
+#cursing {
+    margin-left: 20px;
+    color: #576169;
+}
+
+#waitingGif {
+    vertical-align: bottom;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#quote {
+    font-style: italic;
+    font-size: 1.3em;
+    margin-left: 63%;
+    color: #cd3500;
+}
+
+#satsumaMission {
+    width: 200px;
+    height: 200px;
+}
+
+#imageChistin {
+    width: 200px;
+    height: 200px;
+}
+
+h2, .h2 {
+    font-family: 'Poiret One', cursive;
+    color: #912900;
+    text-shadow: 4px 4px 4px #aaa;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#footerLink {
+    color: #ffff00;
+}
+
+/* class="page-list" -> all lists used over the website */
+.page-list {
+    color: #3D3C3A;
+    font-style: italic;
+}
+
+/* Images floated left or right */
+.align-right {
+    float:right; margin: 0 0 15px 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #696969;
+}
+.align-left {
+    float:left; margin: 0 15px 15px 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #696969;
+}
+
+
+/* стила за бутоните - "запиши се" и т.н. */
+.btn {
+    text-align: center;
+    clear: both;
+}
+.btn a {
+    display: inline-block;
+    margin: 30px auto;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #F6F6F4;
+    font-size: 1.4em;
+    background-color: #912900;
+    padding: 20px 40px;
+    border-radius: 30px;
+    -moz-box-shadow: 0 5px 0 #6e2200;
+    -webkit-box-shadow: 0 5px 0 #6e2200;
+    box-shadow: 0 5px 0 #6e2200;	
+	transition: background-color 2s, box-shadow 2s;
+	-webkit-transition: background-color 2s, box-shadow 2s;
+	-moz-transition: background-color 2s, box-shadow 2s;
+	
+}
+.btn a:hover {
+    background-color: #FF662A;
+    cursor:pointer;
+    -moz-box-shadow: 0 5px 0 #b9592a;
+    -webkit-box-shadow: 0 5px 0 #b9592a;
+    box-shadow: 0 5px 0 #b9592a;
+	transition: background-color 2s, box-shadow 2s;
+	-webkit-transition: background-color 2s, box-shadow 2s;
+	-moz-transition: background-color 2s, box-shadow 2s;
+	
+}
+
+/* стила за формите в contacts.html */
+#topForm {
+    width: 450px;
+    float:left;
+}
+.contactsPage fieldset {
+    border: none;
+}
+.contactsPage form {
+    overflow: hidden;
+}
+.field {
+    /*font-family: Helvetica, Serif;*/
+    display: block;
+    margin: 10px 5px;
+    width: 210px;
+}
+.field input, .field textarea {
+    width: 200px;
+    height: 25px;
+    padding-left: 5px;
+    margin-top: 3px;
+    border: none;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px #888;
+}
+.field textarea {
+    width: 400px;
+    height: 100px;
+}
+.field label {
+    margin: 5px;
+}
+
+#bottomForm {
+    clear: both;
+    padding-top: 40px;
+    width: 700px;
+}
+#bottomForm .field {
+    display: inline-block;
+}
+input[type=radio] {
+    box-shadow: none;
+    width: 15px;
+    height: 15px;
+}
+.submitBtn {
+    background-color: gray;
+    color: white;
+    width: 200px;
+    height: 30px;
+    margin-left: 7px;
+    border-radius: 7px;
+    font-size: 1.2em;
+    box-shadow: 0px 2px 5px #888;
+	transition: background-color 2s;
+	-moz-transition: background-color 2s;
+	-webkit-transition: background-color 2s;
+}
+.submitBtn:hover {
+    background-color: #912900;
+	transition: background-color 2s;
+	-moz-transition: background-color 2s;
+	-webkit-transition: background-color 2s;
+}
+
+#map-frame {
+    margin-top: 2em;
+    position: relative;
+    max-width: 100%;
+    height: 400px;
+}
+    #map {
+	overflow: hidden;
+    }
+	#map iframe {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    overflow: hidden;
+	    border: none;
+	    width: 100%;
+	    height: 100%;
+	    z-index: 0;
+        }
+    #map-frame section {
+	z-index: 10;
+	position: absolute;
+	top: 12%;
+	right: 9%;
+	width: 160px;
+	background-color: rgba(255, 255, 255, 0.6);
+	padding: 1.5em 2.5em;
+	border-radius: 7px;
+	box-shadow: 0 2px 5px #888;
+    }
+	#map-frame section p {
+	    font-family: Helvetica, Serif;
+	    font-size: 1.2em;
+	    font-style: italic;
+	    padding-bottom: 15px;
+	}
+	#map-frame section p:first-letter {
+	    margin-left: 0;
+	}
+	#map-frame section h2 {
+	    text-align: center;
+	}
+	#map-frame section h3 {
+	    margin-bottom: -10px;
+	}
+
+
+/* contacts.html style END */
+
+
+/* trainers.html css */
+
+.trainersPage #mainSection nav ul li , .educationPage #mainSection nav ul li {
+    border-radius: 10px;
+    padding: 5px 25px 5px 5px;
+}
+.trainersPage #mainSection nav ul li a:visited , .educationPage #mainSection nav ul li a:visited  {
+    color: grey;
+}
+.trainersPage #mainSection nav header, .educationPage #mainSection nav header {
+    text-decoration: underline;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.trainersPage #mainSection li.train:first-child:hover {
+    background: #C6D2FF;
+}
+
+.trainersPage #mainSection li.train:nth-child(2):hover {
+    background: #D8FFD1;
+}
+
+.trainersPage #mainSection li.train:nth-child(3):hover {
+    background: #B7FFFA;
+}
+
+.trainersPage #mainSection li.train:nth-child(4):hover {
+    background: #FFC6DB;
+}
+
+.trainersPage #mainSection li.train:nth-child(5):hover {
+    background: #FFD3B5;
+}
+
+.trainersPage #mainSection li.train:nth-child(6):hover {
+    background: #FBFFDB;
+}
+.trainersPage #mainSection li.assist:first-child:hover {
+    background: #DBC9FF;
+}
+.trainersPage #mainSection li.assist:nth-child(2):hover {
+    background: #FFD2AD;
+}
+.trainersPage #mainSection a, .educationPage #mainSection a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    margin: 0 5px;
+}
+
+.trainersPage #mainSection article, .educationPage #mainSection article {
+    background-color: rgba(230,230,230, 0.99);
+    font-size: 1.1em;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 5px 10px;
+}
+
+.trainersPage #mainSection #mainSection section, .educationPage #mainSection #mainSection section {
+    border-radius: 20px;
+    padding: 0 15px 15px 15px;
+    width: 75%;
+    margin: 0;
+}
+
+.trainersPage #mainSection article header, .educationPage #mainSection article header {
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    font-size: 1.8em;
+}
+
+.trainersPage #mainSection #VGolev {
+    color: white;
+    background: #C6D2FF;
+}
+.trainersPage #mainSection #APavlov {
+    background: #D8FFD1;
+}
+.trainersPage #mainSection #EAtanasov {
+    background: #B7FFFA;
+}
+
+.trainersPage #mainSection #SVasileva {
+    background: #FFC6DB;
+    color: white;
+}
+.trainersPage #mainSection #GTeoharov {
+    color: white;
+    background: #FFD3B5;
+}
+
+.trainersPage #mainSection #FBoyadzhiyski {
+    background: #FBFFDB;
+    color: white;
+}
+.trainersPage #mainSection #Nakov {
+    color: white;
+    background: #DBC9FF;
+}
+.trainersPage #mainSection #Angel {
+    background: #FFD2AD;
+    color: white;
+}
+.trainersPage #mainSection article a {
+    font-style:italic;
+    color: #808080;
+}
+.trainersPage #mainSection div:first-line {
+    font-style: italic;
+}
+
+.trainersPage #mainSection div:first-letter {
+    font-size: 3em;
+}
+.educationPage #mainSection .prof {
+    background: #FFD2AD;
+    color: white;
+}
+/*PARTNERS PAGE STYLING START*/
+
+#partners-container {
+    padding: 2%;
+    margin: 2%;
+    max-width: 100%;
+    min-width: 190px;
+    border: 2px solid #bfb9ae;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px grey;
+}
+
+.partner-section {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    border-bottom-left-radius: 20px;
+}
+
+.partner-status {
+    display: block;
+    padding: 4px;
+    width: 165px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#gold-header {
+    background-color: #f7cf00;
+}
+
+#silver-header {
+    background-color: #c0c0c0;
+}
+
+#bronze-header {
+    background-color: #cd7f32;
+}
+
+#gold.partner-section {
+    border-left: 3px solid #f7cf00;
+    border-bottom: 3px solid #f7cf00;
+    margin-bottom: 3%;
+}
+
+#silver.partner-section {
+    border-left: 3px solid #c0c0c0;
+    border-bottom: 3px solid #c0c0c0;
+    margin-bottom: 3%
+}
+
+#bronze.partner-section {
+    border-left: 3px solid #cd7f32;
+    border-bottom: 3px solid #cd7f32;
+}
+
+.partner {
+    box-sizing: border-box;
+    padding: 2%;
+    min-height: 130px;
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.partner img {
+    border-radius: 4px;
+    max-width: 100%;
+    max-height: 120px;
+}
+
+/*PARTNERS PAGE STYLING END*/
+
+
+/*WORK PAGE STYLING START*/
+
+.construction {
+    width: 60%;
+    float: left;
+    margin-right: 4%;
+    margin-bottom: 40px;
+}
+
+.workPage #work-under-construction {
+    font-size: 1.8em;
+    font-style: italic;
+    color: #912900;
+    overflow: hidden;
+}
+
+.workPage strong {
+    text-decoration: underline;
+}
+
+
+
+
+/*WORK PAGE STYLING END*/
+
+
+/* CSS Styles for extra large screens */
+@media only screen and (min-width: 1600px) {
+    body {
+        font-size: 14px;
+
+    }
+    .wrapper {
+        width: 1200px;
+    }
+
+}
+
+/* CSS Styles for smaller screens */
+@media only screen and (max-width: 1024px) {
+    body {
+    }
+    .wrapper {
+        max-width: 1024px;
+	    min-width: 930px;
+    }
+
+}
+
+/* CSS Styles for tablets */
+@media only screen and (max-width: 960px) {
+    body {
+    }
+    .wrapper {
+	    max-width: 960px;
+        min-width: 740px;
+    }
+    #mainNav {
+        clear: both;
+        float: none;
+        text-align: center;
+    }
+    .indexPage #mainSection article {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .indexPage #mainSection article img, .indexPage #CompetitorsVideo {
+        width: 30%;
+        height: auto;
+        max-height: 200px;
+    }
+
+}
+
+/* CSS Styles for smaller tablets */
+@media only screen and (max-width: 768px) {
+    body {
+    }
+    .wrapper {
+	    max-width: 768px;
+        min-width: 610px;
+    }
+    #mainNav {
+        clear: both;
+        float: none;
+    }
+    nav ul {
+        display: block;
+    }
+	.dropit .dropit-submenu {
+		position: static;
+	}
+	.bx-controls-direction {
+		display: none;
+	}
+	nav ul ul li:last-of-type {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+    #mainNav > ul > li {
+        clear: both;
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .topImage {
+        display: none;
+    }
+    .indexPage #mainSection article {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .indexPage #mainSection article img, .indexPage #CompetitorsVideo {
+        width: 40%;
+        height: auto;
+        max-height: 200px;
+    }
+
+    .contactsPage #bottomForm {
+	    width: 470px;
+    }
+	.contactsPage #map-frame {
+	    position: static;
+	    height: 100%;
+	}
+	.contactsPage #map iframe {
+	    position: static;
+	    height: 400px;
+	}
+	.contactsPage #map-frame section {
+	    margin-top: 1em;
+	    position: static;
+        width: auto;
+	}
+	.trainersPage #mainSection div section article header h1 {
+		font-size : 1.5em;
+		margin : 0 auto;
+	}
+	.trainersPage #mainSection div section article header h2 {
+		font-size : 1.2em;
+		margin : 0 auto;
+	}
+	.trainersPage #mainSection article header, .educationPage #mainSection article header {
+		padding: 0;
+		margin: 0;
+		font-size: 1.5em;
+	}
+	.construction {
+	    width: 100%;
+	}
+	.construction div img {
+	    max-width: 100%;
+	}
+    .workPage #work-under-construction {
+        display: block;
+        clear: both;
+    }
+
+}
+
+/* CSS Styles for mobile phones */
+@media only screen and (max-width: 640px) {
+    body {
+    }
+    .wrapper {
+        max-width: 640px;
+        min-width: 450px;
+    }
+    #mainNav {
+        clear: both;
+        float: none;
+    }
+    nav ul {
+        display: block;
+    }
+	.dropit .dropit-submenu {
+		position: static;
+	}
+	nav ul ul li:last-of-type {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+    #mainNav > ul > li {
+        clear: both;
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .topImage {
+        display: none;
+    }
+    .indexPage #mainSection article {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .indexPage #mainSection article img, .indexPage #CompetitorsVideo {
+        width: 50%;
+        height: auto;
+        max-height: 200px;
+    }
+
+    .contactsPage #bottomForm {
+	    width: 100%;
+    }
+	.contactsPage #map-frame {
+	    position: static;
+	    height: 100%;
+	}
+	.contactsPage #map iframe {
+	    position: static;
+	    height: 400px;
+	}
+	.contactsPage #map-frame section {
+	    margin-top: 1em;
+	    position: static;
+	}
+	.trainersPage #mainSection div section article header h1 {
+		font-size : 1.5em;
+		margin : 0 auto;
+	}
+	.trainersPage #mainSection div section article header h2 {
+		font-size : 1.2em;
+		margin : 0 auto;
+	}
+	.trainersPage #mainSection article header, .educationPage #mainSection article header {
+		padding: 0;
+		margin: 0;
+		font-size: 1.5em;
+	}
+
+}
+
+/* CSS Styles for medium mobile phones */
+@media only screen and (max-width: 480px) {
+    body {
+    }
+    .wrapper {
+	    max-width: 480px;
+        min-width: 290px;
+    }
+    #mainNav {
+        clear: both;
+        float: none;
+    }
+    nav ul {
+        display: block;
+    }
+	.dropit .dropit-submenu {
+	    position: static;
+	}
+	nav ul ul li:last-of-type {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+    #mainNav > ul > li {
+        clear: both;
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .topImage {
+        display: none;
+    }
+    .indexPage #mainSection article {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .indexPage #mainSection article img, .indexPage #CompetitorsVideo {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+    .fast-tracksPage img {
+        width: 100%;
+    }
+    #topForm {
+        width: 100%;
+    }
+    .contactsPage #bottomForm {
+	    width: 100%;
+    }
+	.contactsPage .field textarea {
+	    width: 100%;
+	    height: 100px;
+	}
+	.contactsPage #map-frame {
+	    position: static;
+	    height: 100%;
+	}
+	.contactsPage #map iframe {
+	    position: static;
+	    height: 400px;
+	}
+	.contactsPage #map-frame section {
+	    margin-top: 1em;
+	    position: static;
+	}
+	.trainersPage #mainSection div section article header h1 {
+		font-size : 1.5em;
+		margin : 0 auto;
+	}
+	.trainersPage #mainSection div section article header h2 {
+		font-size : 1.2em;
+		margin : 0 auto;
+	}
+	.trainersPage #mainSection article header, .educationPage #mainSection article header {
+		padding: 0;
+		margin: 0;
+		font-size: 1.5em;
+	}
+    .partner {
+        width: 100%;
+    }
+
+}
+
+/* CSS Styles for small mobile phones */
+@media only screen and (max-width:320px) {
+    body {
+    }
+    .wrapper {
+	    max-width: 320px;
+        min-width: 210px;
+    }
+    #mainNav {
+        clear: both;
+        float: none;
+    }
+    nav ul {
+        display: block;
+    }
+	.dropit .dropit-submenu {
+		position: static;
+	}
+	nav ul ul li:last-of-type {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+    #mainNav > ul > li {
+        clear: both;
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .topImage {
+        display: none;
+    }
+    .indexPage #mainSection article {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .indexPage #mainSection article img, .indexPage #CompetitorsVideo {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+    
+    .contactsPage #topForm {
+	    width: 100%;
+    }     
+
+    .contactsPage #bottomForm {
+	    width: auto;
+    }     
+	.contactsPage .field textarea {
+	    width: 100%;
+	    height: 100px;
+	}
+	.contactsPage #map-frame {
+	    position: static;
+	    height: 100%;
+	}
+	.contactsPage #map iframe {
+	    position: static;
+	    height: 400px;
+	}
+	.contactsPage #map-frame section {
+	    margin-top: 1em;
+	    position: static;
+	}
+	.trainersPage #mainSection div section article header h1 {
+		font-size : 1.1em;
+		margin : 0 auto;
+	}
+	.trainersPage #mainSection div section article header h2 {
+		font-size : 1.2em;
+		margin : 0 auto;
+	}
+	.trainersPage #mainSection article header, .educationPage #mainSection article header {
+		padding: 0;
+		margin: 0;
+		font-size: 1.1em;
+	}
+
+}
