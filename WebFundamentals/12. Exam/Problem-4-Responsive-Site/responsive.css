@@ -1,0 +1,94 @@
+﻿@media only screen and (min-width: 981px) {
+    #content article:nth-of-type(2), #categories ul, #social ul, #latest h3, #latest ul li:nth-of-type(1), #latest ul li:nth-of-type(2) {
+        display: none;
+    }
+    #sidebar #categories, #sidebar #social, #sidebar #categories h3, #sidebar #social h3 {
+        margin-bottom: 0;
+    }
+}
+@media only screen and (max-width:980px) {
+    #container, footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #content {
+        width: 60%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    #sidebar {
+        width: 40%;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+    #sidebar #categories, #sidebar #social, #sidebar #latest {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 780px) {
+    /* Ugly fix for #searchBar to be 100% wide ;( */
+    * {
+        box-sizing: border-box;
+    }
+    #container {
+        padding: 30px 30px 0 30px;
+    }
+    header h1 {
+        float: none;
+        clear: both;
+    }
+    header nav {
+        float: none;
+        clear: both;
+        text-align: left;
+        margin: 20px 0;
+    }
+    header nav li {
+        float: none;
+        clear: both;
+        display: inline-block;
+        width: auto;
+        margin: 0 10px 0 0;
+    }
+    header {
+        margin: 0;
+    }
+    #content, #sidebar {
+        width: 100%;
+    }
+    #pagination {
+        margin-bottom: 20px;
+    }
+    #sidebar #categories, #sidebar #social {
+        width: 30%;
+        margin: 0;
+    }
+    #sidebar #latest {
+        width: 40%;
+        margin: 0;
+        float: left;
+    }
+    #search {
+        clear: both;
+        box-sizing: border-box;
+    }
+    #sidebar #search #searchbar {
+        width: 100%;
+    }
+    footer {
+        padding: 10px 22px 30px 22px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    #content .postinfo li {
+        width: 50%;
+        display: inline-block;
+        margin: 0;
+    }
+    #sidebar #categories, #sidebar #social {
+        width: 50%;
+    }
+    #sidebar #latest {
+        width: 100%;
+    }
+}

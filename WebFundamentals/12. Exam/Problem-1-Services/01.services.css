@@ -1,0 +1,76 @@
+﻿@font-face {
+    font-family: ourFont;
+    src: url(OpenSans-ExtraBold.ttf);
+}
+body {
+	background: #f0f0e0;
+	font-family: OpenSans, Helvetica, sans-serif;
+	font-size: 11px;
+}
+h1 {
+	font-size: 56px;
+	color: #009288;
+}
+h1, .heading {
+	font-family: ourFont;
+}
+h2, .heading {
+	font-size: 16px;
+}
+.likeHeading {
+	font-size: 32px;
+}
+.likeHeading, .heading, h1 {
+	text-shadow: 1px 1px 0 white;
+}
+.wrapper {
+	width: 900px;
+	padding: 10px;
+	margin: 0 auto;
+	text-align: center;
+	color: #7f8287;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.column {
+	width: 220px;
+	box-sizing: border-box;
+	float: left;
+}
+.column:hover {
+	background: #f6f6f5;
+	box-shadow: -15px 0px 0 0 #009288;
+}
+a {
+	color: #7f8287;
+	text-decoration: none;
+	padding: 0 20px;
+	padding-top: 70px;
+	display: block;
+}
+.globe {
+	background-image: url(globus.png);
+	background-repeat: no-repeat;
+	background-position: center 5px;
+}
+.search {
+	background-image: url(magnifier.png);
+	background-repeat: no-repeat;
+	background-position: center 5px;
+}
+.clock {
+	background-image: url(alarm-clock.png);
+	background-repeat: no-repeat;
+	background-position: center 5px;
+}
+.chart {
+	background-image: url(graph.png);
+	background-repeat: no-repeat;
+	background-position: center 5px;
+}
+p {
+	line-height: 18px;
+}

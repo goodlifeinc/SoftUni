@@ -1,0 +1,134 @@
+﻿@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), local('Lobster-Regular'), url(http://fonts.gstatic.com/s/lobster/v11/hhO8-q4hv9jbU4UQyl-u4vY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+    font-family: glyph;
+    src: url(glyphicons-halflings-regular.ttf);
+}
+body {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(background.png);
+    background-repeat: repeat;
+    margin: 0;
+    padding: 10px;
+}
+.container {
+    width: 750px;
+    height: 320px;
+    background: #333333;
+    box-sizing: border-box;
+    padding: 30px 20px;
+}
+.login, .advertisement {
+    width: 350px;
+    height: 215px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+}
+h1 {
+    padding: 5px 0;
+    margin: 0;
+    text-align: center;
+    background: #679966;
+    color: #d7e5ee;
+    font-family: Lobster;
+}
+.advertisement {
+    background: #232323;
+    color: #d7e5ee;
+}
+.fire {
+    font-family: glyph;
+    text-align: center;
+    padding: 20px 0 10px;
+    border-bottom: 1px solid #d7e5ee;
+}
+.fire:before {
+    content: "\e104";
+    font-size: 6em;
+}
+.tick {
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+.tick:before {
+    content: "\e089";
+    font-family: glyph;
+}
+.login {
+    padding-left: 10px;
+}
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.loginlbl {
+    font-size: 1.3em;
+    color: #d7e5ee;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.row {
+    margin-top: 20px;
+}
+.row:first-of-type {
+    margin-top: 0;
+}
+.row:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+input[type="text"] {
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 280px;
+}
+input[type="text"]:focus {
+    box-shadow: 0px 0px 2px blue;
+}
+label {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #333333;
+}
+.username, #username, .country, #country {
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    float: left;
+    height: 16px;
+}
+.username, .country {
+    background: #679966;
+}
+.username:before {
+    font-family: glyph;
+    content: "\e008";
+}
+.country:before {
+    font-family: glyph;
+    content: "\e135";
+}
+input[type="submit"] {
+    width: 332px;
+    border-radius: 5px;
+    border: none;
+    color: #d7e5ee;
+    background: #232323;
+    padding: 10px 0;
+}
+input[type="submit"]:hover {
+    background: #679966;
+    cursor: pointer;
+}
